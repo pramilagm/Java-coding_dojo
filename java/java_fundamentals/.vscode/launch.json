@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PuzzleJava",
+            "request": "launch",
+            "mainClass": "PuzzleJava",
+            "projectName": "java_fundamentals_499bea10"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaAlgos",
+            "request": "launch",
+            "mainClass": "JavaAlgos",
+            "projectName": "java_fundamentals_499bea10"
+        }
+    ]
+}
