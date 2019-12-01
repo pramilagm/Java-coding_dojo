@@ -3,8 +3,8 @@ public class Project{
     private String description;
     private double initialcost;
 
-    public String elevatorPitch(String name, Double initialcost, String description){
-        return name + " " + initialcost + " " + description;
+    public String elevatorPitch(){
+        return name + " "  + initialcost + " " + description;
        
 
     }
@@ -27,17 +27,28 @@ public class Project{
         this.initialcost = initialcost;
         this.description = description;
     }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public String getNameDescription(){
-        return name + " " + description;
+    public void setName(String name) {
+        this.name = name;
     }
-    public String  projectString(){
-        return  "I am pramila" ;
+    
+    public void setDescription(String description) {
+        this.description = description;
     }
-    public Object  getnamedesCost(){
-        return name + initialcost +description;
+    public String getDescription() {
+        return description;
     }
+    public void setInitialcost(double initialcost) {
+        this.initialcost = initialcost;
+    }
+    public double getInitialcost() {
+        return initialcost;
+    }
+
+
+   
+    
 
 }

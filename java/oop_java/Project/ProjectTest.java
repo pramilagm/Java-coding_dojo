@@ -3,20 +3,24 @@ import java.util.Arrays;
 
 public class ProjectTest{
     public static void main(String[] args) {
-        Project play = new Project();
-        String getplay = play.elevatorPitch("CHAR", 89.00, "JDKDK");
-        Project sing = new Project("sing");
-        Project dance  = new Project("Go dance","move your body move your body");
-        String getsing = sing.getName();
-        String getnamedes = dance.getNameDescription();
-        System.out.println(getplay);
-        System.out.println(getsing);
-        System.out.println(getnamedes);
-        Portfolio list = new Portfolio(new ArrayList<Project>(Arrays.asList(new Project())));
-        ArrayList getlist = list.getproject();
-        
-        list.addlist(new ArrayList<Project>(Arrays.asList(new Project())));
+        Project project1 = new Project();
+        Project project2 = new Project("Project1");
+        Project project3 = new Project("Project2","This is a project3 description");
+        System.out.println(project1.elevatorPitch());
+        System.out.println(project2.elevatorPitch());
+        System.out.println(project3.elevatorPitch());
+        project1.setInitialcost(2000);
+        project2.setInitialcost(1000);
+        project3.setInitialcost(3000);
+        Portfolio portfolio1 = new Portfolio();
+        portfolio1.addProjects(project1);
+        portfolio1.addProjects(project2);
+        portfolio1.addProjects(project3);
+        portfolio1.showPortfoliocost();
 
-        System.out.println(getlist);
+
+
+
+
     }
 }
